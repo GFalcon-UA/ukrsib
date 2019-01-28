@@ -1,0 +1,35 @@
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<wicket:head>
+    <title>UkrSib Test Exercise</title>
+    <wicket:link>
+        <link href="HomePage.css" rel="stylesheet" type="text/css">
+    </wicket:link>
+</wicket:head>
+<body>
+<h2>UkrSib Test-task</h2>
+
+<h4>Clients</h4>
+<table class="clientTable">
+    <thead>
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Middle name</th>
+        <th>INN</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr wicket:id="clientView">
+        <td><span wicket:id="firstName"></span></td>
+        <td><span wicket:id="lastName"></span></td>
+        <td><span wicket:id="middleName"></span></td>
+        <td><span wicket:id="inn"></span></td>
+    </tr>
+    </tbody>
+</table>
+<br/>
+<h4>Transactions</h4>
+<table class="greyGridTable" wicket:id="transactionTable"></table>
+</body>
+</html>
+
